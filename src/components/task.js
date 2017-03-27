@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import gql from 'graphql-tag';
+import { propType } from 'graphql-anywhere';
 
 const alignStyles = {
   fontSize: '14px',
@@ -59,6 +60,12 @@ Task.fragments = {
     }
   `
   ),
+};
+
+Task.propTypes = {
+  task: propType(Task.fragments.task).isRequired,
+  onSnoozeTask: PropTypes.func,
+  onPinTask: PropTypes.func,
 };
 
 export default Task;
