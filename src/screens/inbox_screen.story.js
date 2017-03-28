@@ -6,7 +6,7 @@ import ApolloClient from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
 
 import InboxScreen from './inbox_screen';
-import TaskList from './task_list';
+import TaskList from '../components/task_list';
 
 import typeDefs from '../schema';
 

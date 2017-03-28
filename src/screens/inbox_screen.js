@@ -2,7 +2,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
 import Inbox from './inbox';
-import TaskList from './task_list';
+import TaskList from '../components/task_list';
 
 const withData = graphql(
   gql`
